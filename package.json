@@ -1,0 +1,29 @@
+{
+  "name": "bootcamp",
+  "version": "0.0.0",
+  "description": "\"Bootcamp excersise of beer page; drunk cats coming soon.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://epainter@dd-stash.glbsnet.com:8080/stash/scm/~epainter/bootcamp.git"
+  },
+  "keywords": [
+    "\"cats\""
+  ],
+  "author": "\"epainter\"",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-concat": "^2.3.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-jade": "^0.6.1",
+    "gulp-jshint": "^1.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-svgmin": "^0.4.6",
+    "gulp-uglify": "^0.3.1"
+  }
+}

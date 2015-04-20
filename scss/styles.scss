@@ -1,0 +1,378 @@
+/* Base Styling */
+
+$blue: #1B75BB;
+$orange: #F05A28;
+$dgrey: #404041;
+$grey: #6D6E70;
+$mgrey: #808284;
+$offwhite: #F2F2F2;
+
+
+/* Fonts */
+
+@import 'fonts';
+
+$font-os: 'OpenSansRegular', Helvetica, Sans-serif;
+$font-osl: 'OpenSansLight';
+$font-osli: 'OpenSansLightItalic';
+$font-osi: 'OpenSansItalic';
+$font-ossb: 'OpenSansSemibold';
+$font-ossbi: 'OpenSansSemiboldItalic';
+$font-osb: 'OpenSansBold';
+$font-a: 'Andada', serif;
+
+/* Nav */
+
+@import 'nav';
+
+/* Drunk Cats */
+
+@import 'drunkcats';
+
+
+/* Base */
+
+body {
+	background: white;
+	font-family:$font-os;
+}
+
+button {
+	border-radius:30px;
+	padding-top:.75rem;
+	padding-bottom:.75rem;
+	font-size:14px;
+	font-family:$font-ossb;
+	margin:0;
+	margin-right:10px;
+}
+
+button.orange:hover {
+	background-color:#CE481B;
+}
+
+button.blue:hover {
+	background-color:#0D5892;
+}
+
+/* General Styles */
+
+.blue {
+	background:$blue;
+}
+
+
+.center {
+	margin:0 auto;
+	display:block;
+}
+
+.half {
+	width:50%;
+}
+
+.none {
+	display:none;
+}
+
+.orange {
+	background:$orange;
+}
+
+/* General Text Style */
+
+h1,h2,h3,p {
+	font-family:$font-os;
+	margin:0;
+}
+
+h1 {
+	font-size:50px;
+}
+
+h2 {
+	font-size:29px;
+}
+
+h3 {
+	font-size:22px;
+}
+
+h4 {
+	font-size:20px;
+	font-family:$font-osli;
+}
+
+p, input, select {
+	font-size:16px;
+}
+
+.andada {
+	font-family:$font-a;
+}
+
+.bold {
+	font-family:$font-osb;
+}
+
+
+.grey {
+	color:$grey;
+}
+
+.white {
+	color:white;
+}
+
+/* First Section Styles */
+
+input[type="text"],select {
+	background-color:$offwhite;
+	color:$mgrey;
+	font-family:$font-osl;
+}
+
+.form {
+	p {
+		padding:10px 0;
+	}
+}
+
+.first {
+	padding-top:50px;
+	padding-bottom:50px;
+
+	h2 {
+		padding-bottom:15px;
+	}
+	p {
+		padding-bottom:15px;
+	}
+}
+
+
+/* Hero Tile Styles */
+
+
+.hero-tile {
+	background:url("../img/hero.jpg") center center;
+	background-size:cover;
+	padding:105px 0 40px 0;
+
+	h1 {
+		font-family:$font-ossb;
+		padding:35px 0;
+	}
+}
+
+/* Bubbling */
+
+@import 'bubble';
+
+/* Content Block Styles */
+
+.content {
+	background:$offwhite;
+
+	.row {
+	padding-top:50px;
+	}
+
+	h1,h2,h3,h4{
+		text-align: center;
+		line-height:1.5em;
+	}
+
+	h1 {
+		font-size:44px;
+	}
+
+	.padbottom {
+		padding-bottom: 35px;
+		padding-top:35px;
+	}
+
+}
+
+.icon-img {
+	height:60px;
+	width:100%;
+	margin:20px 0;
+}
+
+/*
+.bike {
+	background:url("icons/icon-direct-to-you.png") center no-repeat;
+	background-size:contain;
+}
+
+.bike:hover {
+	background:url("icons/icon-direct-to-you.gif") center no-repeat;
+	background-size:contain;
+}
+
+.glass {
+	background:url("icons/icon-pub-less.png") center no-repeat;
+	background-size:contain;
+}
+
+.hand {
+	background:url("icons/icon-peace-of-mind.png") center no-repeat;
+	background-size:contain;
+}
+
+.monkey {
+	background:url("icons/icon-expert-advice.png") center no-repeat;
+	background-size:contain;
+} */
+
+/*Animating Icons */
+@import 'iconAnimate';
+
+/* Footer Styles */
+
+footer {
+	background:$dgrey;
+	padding:40px 0;
+
+	div.barrell {
+		float:right;
+	}
+
+	div.large-4.columns.address {
+		float:left;
+	}
+
+	p{
+		font-size:14px;
+	}
+
+	img {
+		float:right;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	h1,h2,h3,p {
+		text-align: center;
+	}
+
+	h1, .content h1 {
+		font-size:35px;
+	}
+
+	h2 {
+		font-size:24px;
+	}
+
+	.title {
+		width:100%;
+
+		img {
+			display:block;
+			margin:0 auto;
+		}
+	}
+
+	.row.first{
+		h2 {
+			padding-bottom:35px;
+			font-size:35px;
+		}
+
+		.columns {
+			padding:0;
+
+			h1,h2,p {
+				padding-right:20px;
+				padding-left:20px;
+			}
+			h2 {
+				padding-bottom:35px;
+			}
+			p {
+				padding-top:18px;
+			}
+		}
+
+		.main {
+			p{
+				background-color:$offwhite;
+			}
+		}
+
+		.form {
+			padding:20px 20px 0 20px;
+
+			p {
+				font-size:18px;
+			}
+		}
+	}
+
+	.learnmore{
+		margin:0 auto;
+		display:block;
+	}
+
+	.form {
+		padding:0 20px;
+	}
+
+	div.buttons {
+		margin:0 auto;
+		display:table;
+	}
+
+	.content{
+		padding:0;
+
+		h1 {
+			padding-bottom:20px;
+		}
+
+		.diffhead {
+			padding-bottom:25px;
+
+			h2{
+				padding-right: 35px;
+				padding-left: 35px;
+			}
+		}
+
+		.diff {
+			padding-top:25px;
+			background-color:white;
+		}
+	}
+
+	footer {
+		p{
+			text-align: center;
+		}
+
+		img {
+			float:none;
+			margin:0 auto;
+			display:block;
+			padding-bottom:35px;
+			padding-left:30px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	button {
+		margin:0 auto;
+		display:block;
+		padding-right:100px;
+		padding-left:100px;
+	}
+	.buttons{
+		padding-top:35px;
+
+		button.advice{
+		margin-bottom:20px;
+		}
+	}
+}

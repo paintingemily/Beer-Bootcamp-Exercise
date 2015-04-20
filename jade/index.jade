@@ -1,0 +1,118 @@
+doctype html
+html.no-js(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Beer'd
+        link(rel='stylesheet', href='css/foundation.css')
+        link(rel='stylesheet', href='css/slicknav.css')
+        link(rel='stylesheet', href='css/styles.css')
+        //-link(href='http://fonts.googleapis.com/css?family=Andada', rel='stylesheet', type='text/css')
+        script(src='js/vendor/modernizr.js')
+
+    body
+
+        div.nav
+            div.row
+                div.title
+                    img(src="img/logo.png")
+                ul.nav-items#menu
+                    li
+                        a(href="#") Beers
+                    li
+                        a(href="#") Breweries
+                    li
+                        a(href="#") Submit a Find
+                    li
+                        a(href="#") About
+                    li
+                        a(href="#") Contact
+
+        div.wrapper
+            div.hero-tile
+                include include/b1
+                include include/b2
+                include include/b3
+                include include/b4
+                div.row
+                    div.large-6.columns
+                        h1.white Discovering beer just got easier.
+                        button.blue.learnmore Learn More
+
+            div.row.first
+                div.large-6.columns.main
+                    h2.andada You're a couple moments away from getting beer.
+                    p.
+                        Let's start with some basics. By letting us know a bit about your tastebuds, we'll be able to start gathering the information we need in order to get you a beer. We may even be able to introduce you to something you've never tried before but will love.
+                    p.
+                        We're a company who likes beer. We help beer lovers like you find your favorite beers and explore new brews, without the hassle and wait times of your local pub. And since we sell beer directly, we also save you money.
+                div.large-6.columns.form
+                    p.bold What's your favorite beer?
+                    input(type="text", name="favoriteBeer")
+                    p.bold How many times a week do you drink beer?
+                    select
+                        option(selected="true" class="none") Select an option
+                        option(value="once") Once a week
+                        option(value="twice") Twice a week
+                        option(value="all") When am I not drinking?
+
+
+                    div.buttons
+                        button.orange.advice Get Advice
+                        button.blue Get a Beer
+            div.content
+                div.row.diffhead
+                    h1 What makes us different?
+                    h2 WE'RE FOCUSED ON THE NEEDS OF THE BEER LOVERS.
+                div.row.diff
+                    div.large-3.columns
+                        h3.bold Direct to You
+                        div.icon-img.bike
+                            include include/bike
+                        h4.
+                            So we can dramatically lower the cost of your beer without compromising quality.
+                    div.large-3.columns
+                        h3.bold Pub-less
+                        div.icon-img.glass
+                            include include/glass
+                        h4.
+                            We're a 21st century company designed to support your digital mobile lifestyle.
+                    div.large-3.columns
+                        h3.bold Peace of Mind
+                        div.icon-img.hand
+                            include include/hand
+                        h4.
+                            We've partnered with the best micro-breweries with decades of experience.
+                    div.large-3.columns
+                        h3.bold Expert Advice
+                        div.icon-img.monkey
+                            include include/monkey
+                        h4.
+                            We know beer best. We understand how to match you with the right beer at the right price.
+                div.row.padbottom
+                    button.orange.center Learn More
+
+            div.drunkcats
+
+            footer
+                div.row
+                    div.large-4.columns.barrell
+                        img(src="img/footer-graphic.png")
+                    div.large-4.columns.address
+                        p.white 12345 Fremont Ave., Suite 1001,
+                        p.white Seattle, WA 98100
+                        br
+                        p.grey Copyright &Copyright; 2013 Beer'd, Inc.
+
+
+
+        script(src='js/vendor/jquery.js')
+        script(src='js/vendor/jquery.slicknav.js')
+        script(src='js/foundation.min.js')
+        script(src='js/vendor/prefixfree.min.js')
+        script(src='js/vendor/cheet.min.js')
+        script(src='js/bubble.js')
+        script(src='js/drunkcats.js')
+        script.
+          $(document).foundation();
+          $('#menu').slicknav();

@@ -1,0 +1,74 @@
+.hero-tile {
+	overflow:hidden;
+	position:relative;
+}
+
+/* Bubble Animating */
+
+@keyframes popup {
+	0% {
+		transform: translateY(150px);
+	}
+
+	10% {
+		transform: translateY(20px);
+	}
+
+	20% {
+		transform: translateY(0px);
+	}
+
+	80% {
+		transform: translateY(20px);
+	}
+}
+
+.bubble {
+	transform: translateY(340px);
+	/* animation: popup 0.3s ease infinite; */
+	width: 50px;
+	height: 50px;
+}
+
+@keyframes bubbleup {
+	0% {
+		top:500px;
+		opacity:1;
+	}
+	50% {
+		opacity:1;
+	}
+	100% {
+		top:0;
+		opacity:0;
+	}
+}
+
+#b2,#b1, #b3, #b4 {
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:500px;
+	animation:bubbleup 2s ease infinite;
+
+	&:nth-child(2) {
+		animation-delay: 0.2s;
+	}
+	&:nth-child(3) {
+		animation-delay: 0.4s;
+	}
+	&:nth-child(4) {
+		animation-delay: 0.6s;
+	}
+}
+
+#b1, #b3 {
+	width:35px;
+	height:35px;
+}
+
+
+
+
+
+
